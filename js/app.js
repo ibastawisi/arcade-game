@@ -135,7 +135,7 @@ class Player {
                 break;
             case 'up': this.y > 0 ? this.y -= 83 : null;
                 break;
-            case 'down': this.y < 400 ? this.y += 83 : null;
+            case 'down': this.y < 350 ? this.y += 83 : null;
                 break;
         };
 
@@ -147,7 +147,7 @@ class Player {
         } else if (y - 70 < this.y && (x > this.x && this.x + 100 > x)) {
             this.y > 0 ? this.y -= 83 : null;
         } else if (y - 155 > this.y && (x > this.x && this.x + 100 > x)) {
-            this.y < 400 ? this.y += 83 : null;
+            this.y < 350 ? this.y += 83 : null;
         }
     }
 }
